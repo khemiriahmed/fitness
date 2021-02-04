@@ -1,0 +1,102 @@
+
+  .nav-icon {
+    height: 45px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    cursor: pointer;
+    @include transform-rt(0deg);
+    @include transition(.5s ease-in-out);
+    cursor: pointer;
+    span {
+        position: absolute;
+        height: 4px;
+        width: 55px;
+        background: $color_white;
+        @include opacity(1);
+        @include transform-rt(0deg);
+        @include transition(.25s ease-in-out);
+        &:nth-child(1) {
+            top: 0px;
+          
+        }
+        &:nth-child(2) {
+            top: 12px;
+            width: 40px;
+            left: 23px;
+          
+        }
+        &:nth-child(3) {
+            top: 24px;
+        }
+    }
+    &.open {
+        span:nth-child(1) {
+            top: 18px;
+            @include transform-rt(135deg);
+        }
+        span:nth-child(2) {
+            @include opacity(0);
+            left: -60px;
+        }
+        span:nth-child(3) {
+            top: 18px;
+            @include transform-rt(-135deg);
+        }
+    }
+}
+
+
+.side-menu{
+    height: 100%;
+    width: 7%;
+    float: right;
+    background-color: #761c9d;
+    position: relative;
+    z-index: 2;
+
+    .bar-horizontal{
+        width: 1px;
+        height: 115px;
+        background-color: #fff;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+    .search{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s;
+        svg{
+           fill: #fff;
+           transition: all .5s;
+           cursor: pointer;
+        }
+        input{
+            display: none;
+            position: absolute;
+            outline: none;
+            opacity: 0.75;
+            border-radius: 18px;
+            border: 2px solid $color_primary;
+            padding: 0 15px 0 30px;
+            background: #ededed url(../images/search-icon.png) no-repeat 9px center;
+            //color: $color_white;
+    
+     } 
+     .icon-close{
+         display: none;
+     }
+  }
+}
+
+

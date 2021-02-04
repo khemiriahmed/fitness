@@ -1,0 +1,152 @@
+
+body{
+    background-color: $color_primary;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.banner{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .slider.pl{
+        width: 93%;
+        float: left;
+        transition: all .5s;
+    }
+    .slider{
+        float: left;
+    }
+
+    
+        .carousel-inner{
+        height: 100vh;
+        .carousel-caption{
+            max-height: 350px;
+            max-width: 500px;
+            text-align: right;
+            right: 60px;
+            left: auto;
+            top: 160px;
+        }
+    
+}
+.carousel-indicators.carousel-anime{
+    bottom: 0;
+    display: flex;
+    left: 0;
+    width: inherit;
+    transition: all .5s;
+    a {
+       display: none;
+    }
+}
+  .carousel-indicators{
+    bottom: 120px;
+    display: block;
+    left:85%;
+    width: 95px;
+    transition: all .5s;
+
+      &{
+          li{
+          width: 9px;
+          height: 9px;
+          @include bRaduis(50%);
+          margin-left: 40px;
+          margin-top: 15px;
+          background-color: transparent;
+          border: 2px solid #fff;
+          &.active{
+            background-color: #fff;
+            position: relative;
+            border: 5px solid transparent;
+            box-shadow: 0 0 0 5px #ff226e;
+            transition: all 0.9s;
+          }
+     
+      }
+    }
+    a[data-slide="prev"]{
+        opacity: 1;
+        top: -58px;
+        width: 100%;
+        height: 50px;        
+    }
+
+    a[data-slide="next"]{
+        opacity: 1;
+         top: 145px;
+        width: 100%;  
+        height: 50px;           
+    }
+    svg,path{
+        fill: $color_secondary;
+        height: 40px;
+    }
+  
+  }
+  .share{
+  margin-top: 20px;
+  margin-left: 15px;
+  svg{
+      width: 20px;
+      margin-right: 12px;
+      cursor: pointer;
+  }
+  }
+  .top-bar{
+      position: absolute;
+      margin: 0px 30px;
+      z-index: 2;
+      img{
+          height: 30px;
+          cursor: pointer;
+      }
+      ul{
+          display: inline-flex;
+          li{
+              list-style: none;
+              margin: 15px 20px;
+              a{
+                  color: #fff;
+                  display: block;
+                  padding-top: 5px;
+              }
+          }
+      }
+  }
+  .social-icons{
+      top: 35%;
+       left: 3%;
+      position: absolute;
+      z-index:2;
+      
+      li{
+          margin: 10px 0;
+      }
+      svg,path{
+          fill: #fff;
+          transition: all .5s;
+          &:hover{
+              fill:$color_secondary;
+              transform: translateY(-3px);
+              transform: scale(1.1);
+          }
+      }
+  }
+  .d-block {
+    display: block!important;
+    height: 100%;
+    width: 100%;
+}
+.carousel-item{
+    height: 100%;
+}
+}
+
+
+.mission{
+    height: 2000px;
+}

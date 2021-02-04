@@ -1,0 +1,26 @@
+    @media(max-width:991px) {
+        .banner{ 
+            .slider.pl {
+                width: 100%;
+                float: left;
+            }
+            .top-bar{
+                margin: 0;
+            }
+            .carousel-indicators {
+                bottom: 0;
+                display: flex;
+                left: 0;
+                width: inherit;
+                a {
+                   display: none;
+                }
+        }
+     }
+     .side-menu{
+         display: none;
+     }
+     .nav-icon {
+         display: none;
+     }
+    }
