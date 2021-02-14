@@ -1,10 +1,18 @@
 
 $(document).ready(function(){
 
-    $('.carousel').carousel({
-        interval: 300000
+    $('.carousel--').carousel({
+        interval: 6000
       })
 
+    // Add Active Class Navbar Link And Remove From Siblings
+    $('nav li a').click(function() {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+
+    });
+
+
+// Ahide Show icon search
       $('.icon-search').on('click',function(){
           $(this).hide();
           $('.icon-close').fadeIn();
@@ -29,6 +37,16 @@ $(document).ready(function(){
 
       });
 
+
+  //Scroll To TOP Button Fade
+  $('.scroll-top').on('click', function(event) {
+    event.preventDefault();
+    $('html,body').animate({
+        scrollTop: 0
+    }, 1000);
+});
+
+
   //********** Header menu*******//
   $('.nav-icon').click(function() {
     $('.nav-icon').toggleClass('open');
@@ -51,6 +69,13 @@ $(document).ready(function(){
 });
 
 
+ //Scroll Link to Section
+ $('.navbar-nav li a').on('click', function(e) {
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('#' + $(this).data('scroll')).offset().top-80
+    }, 1000);
+});
 
 
 
@@ -76,6 +101,26 @@ $(document).ready(function(){
 
         }
 
+    });
+
+
+    wow = new WOW(
+       {
+        boxClass:     'wow',      // default
+        //animateClass: 'animated', // default
+         //offset:       0,          // default
+         //mobile:       true,       // default
+         //live:         true        // default
+       }
+      )
+      wow.init();
+
+      $('html').niceScroll({
+        cursorcolor: "#ff226e",
+        cursorwidth: "10px",
+        cursorborder: "1px solid #fff",
+        cursorborderradius: "20px",
+        scrollspeed: "120",
     });
 
 });

@@ -21,6 +21,32 @@
          display: none;
      }
      .nav-icon {
-         display: none;
+         display: none !important;
+     }
+     .testimonial{ 
+         .overlay-schedule {
+       height: auto;
      }
     }
+    .mission{
+        .crd{
+            flex: inherit;
+        }
+        .caption{
+            display: block;
+        }
+    }
+    .training-sport {
+        .app{
+            a{margin-right: 0 !important;}
+        }
+    }
+    .fixed-top{
+     padding: 0;
+    }
+    .navbar{
+        background: rgba(132,51,167,0.3);
+        text-align: center;
+        font-size: 25px;
+    }
+}

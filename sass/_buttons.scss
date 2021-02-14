@@ -1,15 +1,16 @@
 @mixin btn-1 {
-    display: inline-block;
-    background: linear-gradient(45deg, #87adfe, #ff77cd);
-    border-radius: 6px;
-    padding: 10px 20px;
-    text-decoration: none;
+    padding: 12px 35px 12px 35px;
+    font-size: 16px;
+    letter-spacing: 2px;
     color: #fff;
-    box-shadow: 3px 8px 22px rgba(94, 98, 68, 0.15);
-    transition: all .5s ease-in-out;
+    border-radius: 35px;
+    background-color: #0082cb;
+    font-weight: 500;
+    border: none;
+    background: linear-gradient(45deg, #0082cb,$color_primary);
+    transition:.5s;
+    text-transform: uppercase;
     &:hover {
-        box-shadow: 3px 8px 22px rgba(236, 75, 169, 0.15);
-        background: linear-gradient(45deg, #ff77cd, #87adfe);
         color: #fff;
     }
 }

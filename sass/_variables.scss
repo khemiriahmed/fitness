@@ -8,10 +8,10 @@
 
 $color_primary: #761c9d;
 $color_secondary: #ff226e;
-$color_arriere_plan: #e6e6e6;
+$color_bleu: #0082cb;
 $color_menu_hover: #f19e0d;
 $color_black: #000;
-$color_menu: #3352a2;
+$color_gris: #eaeaea;
 $color_titre: #5a5a5a;
 $color_texte: #999;
 $color_white: #fff;
@@ -28,29 +28,8 @@ $bg_footer:#dedede;
 
 /*---------------------------------------------------------------------------------*/
 
-@font-face {
-    font-family: 'Dancing Script';
-    src: url("../webfonts/DancingScript-Medium.ttf") format('truetype');
-}
 
-@font-face {
-    font-family: 'Padauk';
-    src: url("../webfonts/Padauk-Regular.ttf") format('truetype');
-}
 
-@font-face {
-    font-family: 'Padauk Bold';
-    font-weight: bold;
-    src: url("../webfonts/Padauk-Bold.ttf") format('truetype');
-}
-
-$Font-Primary:'Padauk',
-sans-serif;
-$Font-Secondary:"Dancing Script",
-cursive;
-$Font-Bold: 'Padauk Bold',
-sans-serif;
-$main-Size:16px;
 
 /*---------------------------------------------------------------------------------*/
 
